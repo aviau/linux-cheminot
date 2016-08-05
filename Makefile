@@ -2,7 +2,6 @@
 build:
 	docker build -t cheminot .
 
-
 .PHONY: run
 run: build
 	xhost +local:docker
