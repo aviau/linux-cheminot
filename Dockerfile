@@ -1,11 +1,8 @@
 FROM debian:stretch
 
 RUN apt-get update && \
-    apt-get install -y --force-yes \
-        icedtea-plugin \
-        wget
+    apt-get install -y icedtea-plugin 
 
-RUN wget https://cheminotjws.etsmtl.ca/ChemiNot.jnlp
-RUN apt-get purge -y wget
+ADD https://cheminotjws.etsmtl.ca/ChemiNot.jnlp
 
 CMD javaws ChemiNot.jnlp
