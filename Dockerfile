@@ -6,6 +6,6 @@ RUN apt-get update && \
         icedtea-plugin && \
     apt clean
 
-ADD https://cheminotjws.etsmtl.ca/ChemiNot.jnlp ChemiNot.jnlp
+ADD https://cheminotjws.etsmtl.ca/ChemiNot.jnlp /opt/ChemiNot.jnlp
 
-CMD javaws ChemiNot.jnlp
+CMD javaws /opt/ChemiNot.jnlp
