@@ -7,7 +7,7 @@ Fait juste ``make run`` pis tu va pouvoir choisir/annuler tes cours.
 Derien.
 
 Si tu veux même pas cloner le repo et builder toi même l'image, fait ca:
- - ``docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix reazem/linux-cheminot``
+ - ``xhost +local:docker && docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix reazem/linux-cheminot``
 
 ## Dependencies
 
