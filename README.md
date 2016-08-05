@@ -10,3 +10,7 @@ Derien.
 
 - make
 - docker
+
+## Trivia
+
+L'école est supérieure, pas la technologie.
