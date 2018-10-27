@@ -1,17 +1,6 @@
-FROM debian:stretch
+FROM base/archlinux
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        locales \
-        icedtea-plugin && \
-    dpkg-reconfigure locales && \
-    locale-gen C.UTF-8 && \
-    /usr/sbin/update-locale LANG=C.UTF-8 && \
-    echo 'en_CA.UTF-8 UTF-8' >> /etc/locale.gen && \
-    locale-gen && \
-    apt purge locales -y && \
-    apt autoremove -y && \
-    apt clean
+RUN pacman -Syu --noconfirm  icedtea-web libxext libxrender libxtst fontconfig ttf-dejavu
 
 ENV LC_ALL C.UTF-8
 ENV LANG en_CA.UTF-8
