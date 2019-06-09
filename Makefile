@@ -9,3 +9,7 @@ run: build
 	-e DISPLAY=$$DISPLAY \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	reazem/linux-cheminot
+
+.PHONY: push
+push:
+	docker push reazem/linux-cheminot:latest
