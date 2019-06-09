@@ -1,6 +1,6 @@
 .PHONY: build
 build:
-	docker build -t cheminot .
+	docker build -t linux-cheminot .
 
 .PHONY: run
 run: build
@@ -8,4 +8,4 @@ run: build
 	docker run -ti --rm \
 	-e DISPLAY=$$DISPLAY \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
-	cheminot
+	linux-cheminot
