@@ -2,7 +2,7 @@
 
 Ben oui, c'est pas facile l'ÉTS.
 
-Fait juste ``make run`` pis tu va pouvoir choisir/annuler tes cours.
+Fais juste ``make run`` pis tu va pouvoir choisir/annuler tes cours.
 
 Derien.
 
